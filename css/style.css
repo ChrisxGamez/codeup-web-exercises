@@ -1,4 +1,51 @@
 .fancy-header {
-    color: purple;
+    text-align: center;
+
+}
+
+h2 {
     text-decoration: underline;
+    color: blue;
+}
+
+body {
+    background-color: red;
+    background-image: url('../img/pic1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+ol {
+    list-style: lower-roman;
+}
+ ul {
+     list-style: square;
+ }
+
+tr {
+    font-size: 20px;
+    padding: 30px;
+}
+
+ td {
+     font-size: 15px;
+     padding: 30px;
+ }
+
+ a:link {
+     color: yellow;
+ }
+
+a:visted {
+    color: red;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: pink;
 }
