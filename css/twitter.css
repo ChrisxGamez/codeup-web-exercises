@@ -77,11 +77,12 @@ a {
     background: var(--light-bg);
     border-bottom: 1px solid var(--separator-color);
     padding: .5em;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .profile-items {
     list-style: none;
+    padding: 0;
 
 }
 
@@ -89,35 +90,35 @@ a {
     margin: .5em;
 }
 
-
 .media-image {
     width: 50px;
     float: left;
-    top: 1.33em;
+    margin-top: 1.33em;
 }
 
 
 .profile-details {
     float: left;
-    margin: 0 .5em 0;
-    width: calc(25% - 1px);
+    margin-top: 0;
+    margin-left: .5em;
+    width: calc(25% - 20px);
 
 }
 
 .timeline {
     float: left;
     margin: 0 .5em 0;
-    width: calc(50% - 1px);
+    width: calc(50% - 10px);
 }
 
 .who-to-follow {
     float: left;
     margin: 0 .5em 0;
-    width: calc(25% - 50px);
+    width: calc(25% - 30px);
 }
 .media-body {
     float: left;
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
 }
 
 .btn {
