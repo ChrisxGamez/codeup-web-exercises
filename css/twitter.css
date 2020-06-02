@@ -54,7 +54,7 @@ a {
 
 .profile-image{
     position: absolute;
-    top: 230px;
+    top: 250px;
 
 }
 .profile {
@@ -75,8 +75,7 @@ a {
 .media {
     width: 100%;
     background: var(--light-bg);
-    border-bottom: var(--separator-color);
-    border-bottom: 1px;
+    border-bottom: 1px solid var(--separator-color);
     padding: .5em;
     overflow: hidden;
 }
@@ -96,7 +95,6 @@ a {
     float: left;
     top: 1.33em;
 }
-
 
 
 .profile-details {
@@ -119,7 +117,7 @@ a {
 }
 .media-body {
     float: left;
-    width: calc(100% - 75px);
+    width: calc(100% - 100px);
 }
 
 .btn {
