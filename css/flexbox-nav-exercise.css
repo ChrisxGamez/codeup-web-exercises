@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #d5d0d0;
+    height: 5em;
+    width: 100%;
+    overflow: visible;
+}
+
+ul {
+    list-style: none;
+    padding: 1em;
+    margin: 0;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', "Work Sans";
+    display: inline-block;
+    padding: 1em;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+nav ul li:nth-child(5) {
+    margin: auto;
+    font-size: 3em;
+    padding: .2em;
+    font-family: 'Work Sans';
+    position: relative;
+    bottom: 1.25em;
+}
