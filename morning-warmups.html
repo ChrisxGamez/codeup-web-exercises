@@ -41,11 +41,11 @@ console.log('Happy birthday to you!');*/
     // console.log(countUpFive(i));
 
 // /* Return the number Seven */
-//
-//     function number(x) {
-//         return x;
-//     }
-//     console.log(7);
+
+    // function number(x) {
+    //     return x;
+    // }
+    // console.log(7);
 //
 //     function returnSeven() {
 //         return 7;
@@ -58,25 +58,44 @@ console.log('Happy birthday to you!');*/
 //     }
 //
 // console.log(string('hello'))
+//
+// function strLength(string) {
+// return string.length;
+// }
+// console.log(strLength("Hello"))
+// console.log(strLength("World"))
+//
+//
+//
+// // Write a JavaScript function that returns the number of characters in a string passed through it.
+// function numOfCharacters(str) {
+//         return str.length;
+//     }
+//         console.log(numOfCharacters("hello!!"))
 
-function strLength(string) {
-return string.length;
-}
-console.log(strLength("Hello"))
-console.log(strLength("World"))
+    // Write a JavaScript function that will return the diameter of a circle with a radius of the circle passed through it.
 
-
-
-// Write a JavaScript function that returns the number of characters in a string passed through it.
-function numOfCharacters(str) {
-        return str.length;
+    function diameter(radius) {
+        return 2 * radius;
     }
-        console.log(numOfCharacters("hello!!"))
 
+        console.log(diameter(12));
 
+    // Write a JavaScript function that returns the square root of the number passed through it.
 
+        function sqrRoot(x) {
+        return Math.sqrt(x);
+    }
 
+    console.log(sqrRoot(64));
 
+    function countVowels(word) {
+        var vowels = /["a", "A", "e","E","i","I","o","O","u","U"]/g;
+        return word.match(vowels)
+
+    }
+
+    console.log(countVowels("banana"));
 
 </script>
 
