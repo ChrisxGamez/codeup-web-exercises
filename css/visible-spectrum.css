@@ -1,54 +1,148 @@
-.box {
-    border: 1px solid blacK;
-    width: 50px;
-    height: 50px;
-    padding: 12px;
-    margin-top: 50px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    position: relative;
-    float: left;
-}
+@media screen and (max-width: 699px) {
 
-#b1 {
-    background-color: red;
-    font-weight: bold;
-}
+    .box {
+        border: 1px solid blacK;
+        width: 50px;
+        height: 50px;
+        padding: 12px;
+        margin-top: 50px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        position: relative;
+        float: left;
+    }
 
-#b2 {
-    background-color: orange;
-    font-weight: bold;
-}
+    .ribbon {
+        display: none;
+    }
 
-#b3 {
-    background-color: yellow;
-    font-weight: bold;
+    a:hover {
+        color: red;
+    }
 
-}
+    a:visited {
+        color: purple;
+    }
 
-#b4 {
-    background-color: green;
-    text-align: center;
-    clear: both;
-}
+    a:active {
+        color: pink;
+    }
 
-#b5 {
-    background-color: blue;
-    font-weight: bold;
-}
+    #b1 {
+        background-color: red;
+        font-weight: bold;
+    }
 
-#b6 {
-    background-color: violet;
-    font-weight: bold;
-}
+    #b2 {
+        background-color: orange;
+        font-weight: bold;
 
 
-img {
-    position: relative;
-    float: left;
-    top: 10px;
-    right: 20px;
-}
+    }
 
+    #b3 {
+        background-color: yellow;
+        font-weight: bold;
+        clear: both;
+
+    }
+
+    #b4 {
+        background-color: green;
+        text-align: center;
+
+    }
+
+    #b5 {
+        background-color: blue;
+        font-weight: bold;
+        clear: both;
+    }
+
+    #b6 {
+        background-color: violet;
+        font-weight: bold;
+    }
+
+
+    img {
+        position: relative;
+        float: left;
+        top: 10px;
+        right: 20px;
+    }
+    }
+
+    @media only screen and (min-width: 700px) {
+
+        .box {
+            border: 1px solid blacK;
+            width: 50px;
+            height: 50px;
+            padding: 12px;
+            margin-top: 50px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            position: relative;
+            float: left;
+        }
+        .ribbon {
+            position: absolute;
+            float: left;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:active {
+            color: pink;
+        }
+
+        #b1 {
+            background-color: red;
+            font-weight: bold;
+        }
+
+        #b2 {
+            background-color: orange;
+            font-weight: bold;
+        }
+
+        #b3 {
+            background-color: yellow;
+            font-weight: bold;
+
+        }
+
+        #b4 {
+            background-color: green;
+            text-align: center;
+            clear: both;
+        }
+
+        #b5 {
+            background-color: blue;
+            font-weight: bold;
+        }
+
+        #b6 {
+            background-color: violet;
+            font-weight: bold;
+        }
+
+
+        img {
+            position: relative;
+            float: left;
+            top: 10px;
+            right: 20px;
+        }
+    }
 
