@@ -1,0 +1,18 @@
+body {
+
+}
+
+.circle {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    border: 10px solid black;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: space-evenly;*/
+
+
+}
