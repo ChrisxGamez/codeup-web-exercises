@@ -2,17 +2,47 @@ body {
 
 }
 
-.circle {
+h1, h2 {
+    font-family: 'Anton', sans-serif;
+}
+
+.main {
     background-color: red;
     color: white;
     font-weight: bold;
     border-radius: 50%;
     width: 105px;
     height: 105px;
-    border: 10px solid black;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: space-evenly;*/
-
-
+    border: 10px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
 }
+
+.icon {
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+#icon1 {
+    background-color: #E6563B;
+}
+#icon2 {
+    background-color: #DEA03D;
+}
+
+#icon3 {
+    background-color: #7CB06C;
+}
+
+#icon4 {
+    background-color: #00ABA9;
+}
+
+/*@media screen and (max-width: 442px) {*/
+
+/*}*/
