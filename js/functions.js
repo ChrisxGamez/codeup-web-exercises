@@ -95,21 +95,21 @@ console.log(isTwo(random));
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-// function calculateTip(total,tip) {
-//     return total * tip;
-// }
-//
-// console.log(calculateTip(20, .20));
-// console.log(calculateTip(25.50, 0.25));
-// console.log(calculateTip(33.42,0.15));
-
-const calculateTip = function (tipPercentage, totalBill) {
-    return tipPercentage * totalBill;
+function calculateTip(totalBill,totalTip) {
+    return totalBill * totalTip;
 }
 
 console.log(calculateTip(20, .20));
 console.log(calculateTip(25.50, 0.25));
 console.log(calculateTip(33.42,0.15));
+
+// const calculateTip = function (tipPercentage, totalBill) {
+//     return tipPercentage * totalBill;
+// }
+//
+// console.log(calculateTip(20, .20));
+// console.log(calculateTip(25.50, 0.25));
+// console.log(calculateTip(33.42,0.15));
 
 
 
