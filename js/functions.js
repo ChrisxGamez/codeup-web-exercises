@@ -9,8 +9,8 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
-function sayHello(x) {
-    return "Hello, " + (x);
+function sayHello(name) {
+    return "Hello, " + (name);
 }
 
 
@@ -26,7 +26,6 @@ function sayHello(x) {
 // console.log(sayHello("Chris"));
 
 var helloMessage = sayHello("Christopher");
-
 console.log(helloMessage);
 
 
@@ -38,7 +37,7 @@ console.log(helloMessage);
  */
 
 var myName = "Chris"
-console.log(myName);
+console.log(sayHello(myName));
 
 
 
@@ -63,15 +62,26 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 
-function isTwo(num) {
-    if (num === 2) {
-        return true;
-    } else {
-        return false }
+// function isTwo(num) {
+//     if (num === 2) {
+//         return true;
+//     } else {
+//         return false }
+// }
+//
+// console.log(isTwo(1));
+// console.log(isTwo(2));
+// console.log(isTwo(3));
+// console.log(isTwo(random));
+
+
+const isTwo = function (num) {
+    return num === 2;
 }
-console.log(isTwo(1));
-console.log(isTwo(2));
-console.log(isTwo(3));
+
+console.log(isTwo(random));
+
+
 
 
 /**
@@ -85,13 +95,24 @@ console.log(isTwo(3));
  * > calculateTip(0.25, 25.50) // returns 6.37
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-function calculateTip(total,tip) {
-    return total * tip;
+// function calculateTip(total,tip) {
+//     return total * tip;
+// }
+//
+// console.log(calculateTip(20, .20));
+// console.log(calculateTip(25.50, 0.25));
+// console.log(calculateTip(33.42,0.15));
+
+const calculateTip = function (tipPercentage, totalBill) {
+    return tipPercentage * totalBill;
 }
 
 console.log(calculateTip(20, .20));
 console.log(calculateTip(25.50, 0.25));
 console.log(calculateTip(33.42,0.15));
+
+
+
 
 
 /**
@@ -101,10 +122,15 @@ console.log(calculateTip(33.42,0.15));
  * then display the dollar amount they should tip
  */
 
-let totalBill = parseInt(prompt("What is the total of your bill?"));
-let totalTip = parseInt(prompt("What percentage would you like to tip?"));
+let totalBill = parseFloat(prompt("What is the total of your bill?"));
+let totalTip = parseFloat(prompt("What percentage would you like to tip?"));
 
 alert("Suggested tip should be: " + (calculateTip(totalBill,totalTip)));
+
+// let totalBill = parseFloat(prompt("What is your total bill?"));
+// let tipPercentage = parseFloat(prompt("What percentage would you like to tip?"));
+//
+// alert("Suggested tip should be: $" + calculateTip(tipPercentage, totalBill));
 
 
 /**
@@ -128,3 +154,8 @@ function applyDiscount(originalPrice,discountPercent) {
 
 alert("Your total after discount is " + applyDiscount(-45.99,.12,).toFixed(2));
 
+// var originalPrice = 100;
+// var dicountPercent = .2; // 20%
+// console.log(applyDiscount(originalPrice, dicountPercent)); // 80
+//
+// console.log(applyDiscount(45.99, 0.12)); // 40.4712
