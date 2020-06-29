@@ -20,70 +20,73 @@
 //  */
 //
 //
-// function analyzeColor(color) {
-// if (color === "blue") {
-//     return "blue is the color of the sky";
-// } if (color === "red") {
-//         return "Strawberries are red";
-//     } if (color === "cyan") {
-//         return "I don't know anything about cyan";
-//     } else {
-//     return "Not the right color";
-//     }
-//         }
-//
-// console.log(analyzeColor("black"));
-//
-//
-//
+function analyzeColor(color) {
+if (color === "blue") {
+    return "blue is the color of the sky";
+
+} else if (color === "red") {
+        return "Strawberries are red";
+
+} else if (color === "cyan") {
+        return "I don't know anything about cyan";
+
+} else {
+    return color + " is not the right color";
+}
+}
+
+console.log(analyzeColor("black"));
+console.log(analyzeColor("red"));
+console.log(analyzeColor("cyan"));
+console.log(analyzeColor("blue"));
+
 // // Don't change the next two lines!
 // // These lines create two variables for you:
 // // - `colors`: a list of the colors of the rainbow
 // // - `randomColor`: contains a single random color value from the list (this
 // //                  will contain a different color every time the page loads)
-// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-// var randomColor = colors[Math.floor(Math.random() * colors.length)];
+var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var randomColor = colors[Math.floor(Math.random() * colors.length)];
 // /**
 //  * TODO:
 //  * Pass the `randomColor` variable to your function and console.log the results.
 //  * You should see a different message every time you refresh the page
-//  */
-//
-// function analyzeColor(color) {
-//     if (color === "blue") {
-//         return "blue is the color of the sky";
-//     } if (color === "red") {
-//         return "Strawberries are red";
-//     } if (color === "cyan") {
-//         return "I don't know anything about cyan";
-//     } else {
-//         return "Not the right color";
-//     }
-// }
-//
-// console.log(analyzeColor(randomColor));
-//
-//
+
+
+function analyzeColor(color) {
+    if (color === "blue") {
+        return "blue is the color of the sky";
+    } if (color === "red") {
+        return "Strawberries are red";
+    } if (color === "cyan") {
+        return "I don't know anything about cyan";
+    } else {
+        return "Not the right color";
+    }
+}
+
+console.log(analyzeColor(randomColor));
+
+
 // /**
 //  * TODO:
 //  * Refactor your above function to use a switch-case statement
 //  */
 //
-// switch (analyzeColor) {
-//     case "blue":
-//         console.log("blue is the color of the sky");
-//         break;
-//     case "red":
-//         console.log("Strawberries are red");
-//         break;
-//     case "cyan":
-//         console.log("I don't know anything about cyan");
-//         break;
-//     default:
-//         console.log("Not the right color");
-// }
-//
-// console.log(analyzeColor("black"));
+switch (analyzeColor) {
+    case "blue":
+        console.log("blue is the color of the sky");
+        break;
+    case "red":
+        console.log("Strawberries are red");
+        break;
+    case "cyan":
+        console.log("I don't know anything about cyan");
+        break;
+    default:
+        console.log("I don't know anything about color");
+}
+console.log(analyzeColor("black"));
 //
 // /**
 //  * TODO:
@@ -92,25 +95,22 @@
 //  * function to show it to the user.
 //  */
 //
-// var analyzeColor = prompt("Please select a color: Blue, Red, Cyan")
-// switch (analyzeColor) {
-//     case "blue":
-//         alert("blue is the color of the sky");
-//         break;
-//     case "red":
-//         alert("Strawberries are red");
-//         break;
-//     case "cyan":
-//        alert("I don't know anything about cyan");
-//         break;
-//     default:
-//         alert("Please select Blue, Red, or Cyan");
-// }
-// console.log(analyzeColor);
-//
-//
 
-
+let selectedColor = prompt("Please select a color: Blue, Red, Cyan")
+switch (selectedColor) {
+    case "blue":
+        alert("blue is the color of the sky");
+        break;
+    case "red":
+        alert("Strawberries are red");
+        break;
+    case "cyan":
+       alert("I don't know anything about cyan");
+        break;
+    default:
+        prompt("Please select Blue, Red, or Cyan");
+}
+console.log(selectedColor);
 
 
 
@@ -141,24 +141,24 @@
 
 function calculateTotal(luckyNum,totalAmt) {
     if (luckyNum === 0) {
-        return totalAmt * -1;
+        return totalAmt;
     }
-    if (luckyNum === 1) {
-        return totalAmt * .10 - totalAmt;
+    else if (luckyNum === 1) {
+        return totalAmt - totalAmt * .10 ;
     }
-    if (luckyNum === 2) {
-        return totalAmt * .25 - totalAmt;
+    else if (luckyNum === 2) {
+        return totalAmt - totalAmt * .25 ;
     }
-    if (luckyNum === 3) {
-        return totalAmt * .25 - totalAmt;
+    else if (luckyNum === 3) {
+        return totalAmt - totalAmt * .35 ;
     }
-    if (luckyNum === 4) {
-        return totalAmt * .50 - totalAmt;
+    else if (luckyNum === 4) {
+        return totalAmt - totalAmt * .50 ;
     }
-    if (luckyNum === 5) {
+    else if (luckyNum === 5) {
         return totalAmt * 0.;
     } else {
-        alert("Please enter a number from 0 to 5")
+        return "Please enter a number from 0 to 5";
     }
 }
 
@@ -168,6 +168,8 @@ console.log(calculateTotal(4, 100));
 console.log(calculateTotal(5, 100));
 
 
+
+
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
@@ -175,19 +177,20 @@ console.log(calculateTotal(5, 100));
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// // Generate a random number between 0 and 6;
-// var luckyNumber = Math.floor(Math.random() * 6);
-//
-//
-//
-// var totalAmt = prompt("What is your total?");
-//
-// function winningInfo (LuckyNumber,TotalAmt) {
-//     return totalAmt * luckyNumber - totalAmt;
-// }
-//
-//
-// alert("Your Lucky Number was: " + luckyNumber + " Your total bill was " + totalAmt + " Your new bill is " + (calculateTotal(luckyNumber,totalAmt)));
+// Generate a random number between 0 and 6;
+var luckyNumber = Math.floor(Math.random() * 6);
+
+
+
+let totalAmt = prompt("What is your total?");
+
+function winningInfo (LuckyNumber,TotalAmt) {
+    return totalAmt - totalAmt * luckyNumber ;
+}
+
+alert("Your Lucky Number is: " + luckyNumber);
+alert("Your total bill is " + totalAmt);
+alert("Your new bill is now " + (calculateTotal(luckyNumber,totalAmt)));
 
 
 
@@ -211,32 +214,29 @@ console.log(calculateTotal(5, 100));
  */
 
 
-var okNum = parseInt(confirm("Would you like to enter a number?"))
-var selectedNum = parseInt(prompt("pick a number from 1 -100"))
+let okNum = confirm("Would you like to enter a number?");
+if (okNum === false) {
+    alert("Please enter Number")
+}
 
-if  (okNum === true) {
-    prompt("Please select a number from 1 -100")
+let selectedNum = parseInt(prompt("Great! Please pick a number from 1 -100"));
 
-}  if (selectedNum % 2 === 0 && selectedNum > 0) {
-     alert("Your number is even ")
+
+  if (selectedNum % 2 === 0) {
+     alert("Your number is even")
+
+} else {
+    alert(" Your number is odd")
 
 }  if (selectedNum > 0) {
     alert("Your number is positive")
 
-}  if (okNum === 1 okNum + 1) {
-    alert("Your number is ")
+}  else {
+    alert("Your number is negative")
 
-// } else if (selectedNum % 2 !== 0 && selectedNum > 0) {
-//     alert(" Your number is odd and positive")
-//
-// }  else if (selectedNum % 2 === 0 && selectedNum < 0) {
-//     alert("Your number is even and negative")
-//
-// } else if (selectedNum % 2 !== 0 && selectedNum < 0) {
-//     alert(" Your number is odd and negative")
+} if (selectedNum++) {
+    alert("Your number is plus 1 is " + selectedNum)
 
-} else  {
-    prompt("Please select a number from 1 -100")
 }
 
 
@@ -252,30 +252,3 @@ if  (okNum === true) {
 
 
 
-// } else {
-//  alert("Please select a number from 1 - 100");
-// }
-
-
-
-
-// if (selectedNum % 2 !== 0) {
-//     alert("Your number is even")
-// }  if (selectedNum % 2 !== 0) {
-//     alert("Your number is odd")
-// }
-
-
-
-
-
-
-
-//     prompt(selectNum);
-// }
-//
-//
-// // } if (selectNum % 2 === 0) {
-// //     alert("You number is even")
-// // }
-// // }
