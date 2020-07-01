@@ -251,14 +251,42 @@ console.log('Happy birthday to you!');*/
 //     lightswitch();
 //     console.log("lights are now " + lights);
 
+ //
+ // for (let i = 1; i <= 10; i++)
+ //     if ( i % 2 === 0) {
+ //         console.log(i + " is even")
+ //     } else {
+ //        console.log(i + " is odd")
+ //     }
 
- for (let i = 1; i <= 10; i++)
-     if ( i % 2 === 0) {
-         console.log(i + " is even")
-     } else {
-        console.log(i + " is odd")
-     }
+    // Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+    //
+    // doubleChar("String") ==> "SSttrriinngg"
+    //
+    // doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
+    //
+    // doubleChar("1234!_ ") ==> "11223344!!__  "
 
+    var s = "Christopher";
+    console.log(s.replace(/./g, '$&$&'));
+
+let dub = function doubleChar(str) {
+    let returnString = "";
+
+    for (var i = 0; i < str.length; i++) {
+        returnString += str[i] + str[i];
+        console.log(returnString);
+    }
+}
+    console.log(dub("string"))
+
+
+
+    function firstAndLast(seq) {
+        return seq.shift();
+    }
+
+    console.log(firstAndLast([1, 2, 3, 4,5,6,7,8,9,10,11]));
 
 
 

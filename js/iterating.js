@@ -7,7 +7,7 @@
      * 'names'.
      */
             var names = [" Page", " Plant", " Jones", " Bonham"]
-            console.log(names);
+
 
 
     /**
@@ -34,10 +34,6 @@
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
-
-    var notice = 'The name at index 1 is: ' + names[1] + "\n";
-    notice = notice + 'The name at index 4 is: ' + names[4];
-
 
     for (var i = 0; i < names.length; i++) {
         console.log("The name at index " + i + " is " + names[i] + ".");
@@ -68,20 +64,25 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    function first([names]) {
-        return names;
-    }
-    console.log(names[1]);
 
-    function first([names]) {
-        return names;
-    }
-    console.log(names[2]);
+    let numbers = [1, 2, 3, 4, 5]
 
-    function first([names]) {
-        return names;
+
+    let first = function(arr) {
+        return arr[0] ;
     }
-    console.log(names[5]);
+    console.log(first(numbers));
+
+    let second = function(arr) {
+        return arr[1] ;
+    }
+    console.log(second(numbers));
+
+
+    let last = function(arr) {
+        return arr[arr.length-1] ;
+    }
+    console.log(last(numbers));
 
 
 })();
