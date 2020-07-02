@@ -267,28 +267,36 @@ console.log('Happy birthday to you!');*/
     //
     // doubleChar("1234!_ ") ==> "11223344!!__  "
 
-    var s = "Christopher";
-    console.log(s.replace(/./g, '$&$&'));
+//     var s = "Christopher";
+//     console.log(s.replace(/./g, '$&$&'));
+//
+// let dub = function doubleChar(str) {
+//     let returnString = "";
+//
+//     for (var i = 0; i < str.length; i++) {
+//         returnString += str[i] + str[i];
+//         console.log(returnString);
+//     }
+// }
+//     console.log(dub("string"))
+//
+//
+//
+//     function firstAndLast(seq) {
+//         return seq.shift();
+//     }
+//
+//     console.log(firstAndLast([1, 2, 3, 4,5,6,7,8,9,10,11]));
 
-let dub = function doubleChar(str) {
-    let returnString = "";
-
-    for (var i = 0; i < str.length; i++) {
-        returnString += str[i] + str[i];
-        console.log(returnString);
+    function isOdd (input){
+    if (input % 2 == 1) {
+        return true;
+    } else {
+        return false;
     }
-}
-    console.log(dub("string"))
-
-
-
-    function firstAndLast(seq) {
-        return seq.shift();
     }
 
-    console.log(firstAndLast([1, 2, 3, 4,5,6,7,8,9,10,11]));
-
-
+    console.log(input(3));
 
 
 </script>
