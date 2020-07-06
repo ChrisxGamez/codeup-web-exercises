@@ -12,6 +12,15 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
+    let person = {
+        firstName: "Christopher",
+        lastName: " Gamez",
+        sayHello: "Hello from "
+    };
+    console.log(person.firstName);
+    console.log(person.lastName);
+
+
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -21,6 +30,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+    console.log(person.sayHello + person.firstName + person.lastName + "!");
+
+
+
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -36,11 +49,32 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+var shoppers = [
+        {
+            name: 'Cameron',
+            amount: 180,
+},
+    {
+         name: 'Ryan',
+        amount: 250,
+},
+
+        {
+            name: 'George',
+            amount: 320,
+            }
+    ];
+
+    shoppers.forEach(function (shopper) {
+        var discountedPrice = shopper.amount
+        var discount = 0
+        if (shopper.amount > 200){
+            discount = 12;
+            discountedPrice = 0.88 * shopper.amount;
+        }
+        console.log("Shopper: " + shopper.name + " amount: $" + shopper.amount + " discount: " + discount + "% = $" + discountedPrice);
+    });
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -54,6 +88,53 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var books = [
+        {
+            title: " Romeo and Juliet",
+            author: {
+                firstName: " William",
+                lastName: " Shakespeare",
+            }
+        },
+
+        {
+            title: " The Guest",
+            author: {
+                firstName: " Albert",
+                lastName: " Camus",
+            }
+        },
+
+        {
+            title: " As I lay Dying",
+            author: {
+                firstName: " William",
+                lastName: " Faulkner",
+            }
+        },
+        {
+            title: " A Draft of Shadows",
+            author: {
+                firstName: " Octavio",
+                lastName: " Paz",
+            }
+        },
+
+        {
+            title: " 100 Love Sonnets",
+            author: {
+                firstName: " Pablo",
+                lastName: "Neruda",
+            }
+        }
+];
+console.log(books[0].title)
+console.log(books[0].author.firstName)
+console.log(books[0].author.lastName)
+
+
+
 
     /**
      * TODO:
@@ -79,6 +160,13 @@
      *      ---
      *      ...
      */
+        books.forEach(function (books, index) {
+        console.log("The book # " + index, '\n' + "Title:" + books.title, '\n' + "Author:" + books.author.firstName + books.author.lastName);
+    });
+
+
+
+
 
     /**
      * Bonus:
