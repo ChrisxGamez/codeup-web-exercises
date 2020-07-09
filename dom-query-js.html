@@ -27,6 +27,12 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<button id="btn1">Inner Html</button>
+<button id="btn2">Color Blue</button>
+<button id="btn3">Click Me!</button>
+<button id="btn4">Mission!</button>
+
+
 <script>
     (function() {
         "use strict";
@@ -34,12 +40,16 @@
 
             // TODO: Uncomment next line and get the main header element by id
             // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+            //
+                var mainHeader = document.getElementById('main-header');
+                mainHeader.innerHTML = "Javascript is Cool";
 
-            document.getElementById('btn1').addEventListener('click', function () {
-            var mainHeader = document.getElementById('main-header');
-            mainHeader.innerHTML = "Javascript is Cool"
-        });
-
+        // document.getElementById("btn1").addEventListener("click", function() {
+        //     // TODO: Uncomment next line and get the main header element by id
+        //     let mainHeader = document.getElementById('main-header');
+        //     // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+        //     mainHeader.innerText = 'JavaScript is Cool';
+        // });
 
 
         // TODO: Uncomment the next line and get the sub header element by id
@@ -88,10 +98,7 @@
 
 </script>
 
-<button id="btn1">Inner Html</button>
-<button id="btn2">Color Blue</button>
-<button id="btn3">Click Me!</button>
-<button id="btn4">Mission!</button>
+
 
 
 
