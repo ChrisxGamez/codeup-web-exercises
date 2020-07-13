@@ -15,10 +15,8 @@
 
         .btn {
             border: 1px solid black;
-            border-radius: 20px;
+            border-radius: 10px;
         }
-
-
 
     </style>
 </head>
@@ -27,8 +25,8 @@
 
 
 <h1>My First Mapbox Map!</h1>
-<!--<button id="btn1" class="btn">Zoom In</button>-->
-<!--<button id="btn2" class="btn">Zoom Out</button>-->
+<button id="btn1" class="btn">Zoom In</button>
+<button id="btn2" class="btn">Zoom Out</button>
 
 
 
@@ -39,15 +37,14 @@
 <!-- Mapbox JS -->
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
-
 <!-- Mapbox Geocoder Util Methods -->
 <script src="js/mapbox-geocoder-utils.js"></script>
 <script src="js/keys.js"></script>
 
-
 <!-- Custom JS -->
 
 <script>
+
 
     var accessToken = mapboxKey;
     mapboxgl.accessToken = accessToken;
@@ -75,7 +72,7 @@
 
     var boilingPot = {
         address: "201 Fulton Beach Rd, Rockport, TX 78382",
-        popupHTML: "<p>The Boling Pot<br> 201 Fulton Beach Rd, Rockport, TX 78382<br><a href=\theboilingpotrockport.com/the-boiling-pot-menu\">Menu</a><br>Recommend: The Super Combo</p>"
+        popupHTML: "<p>The Boling Pot<br> 201 Fulton Beach Rd, Rockport, TX 78382<br><a href=\"https://theboilingpotrockport.com/the-boiling-pot-menu\">Menu</a><br>Recommend: The Super Combo</p>"
     };
 
 
@@ -88,7 +85,7 @@
 
     var botika = {
         address: "The Pearl, 303 Pearl Pkwy #111, San Antonio, TX 78215",
-        popupHTML: "<p>Botika<br>The Pearl, 303 Pearl Pkwy #111, San Antonio, TX 78215<br><a href=\https://botikapearl.com\">Menu</a><br>Recommend: Potstickers</p>"
+        popupHTML: "<p>Botika<br>The Pearl, 303 Pearl Pkwy #111, San Antonio, TX 78215<br><a href=\"https://botikapearl.com\">Menu</a><br>Recommend: Potstickers</p>"
     };
 
 
@@ -122,11 +119,11 @@
 
 // Functions
 
-    // var btn1 = function () {
-    //     map.setZoom(20)
-    //     document.getElementById("btn1")
-    //     addEventListener('click', btn1)
-    // }
+    var btn1 = function () {
+        map.setZoom(20)
+        document.getElementById('btn1')
+        addEventListener('click', btn1)
+    }
 
 
     function placeMarkerAndPopup(info, token, map) {
@@ -139,20 +136,12 @@
                 .setPopup(popup);
             // popup.addTo(map);
         });
-        map.addControl(new mapboxgl.NavigationControl());
     }
-
-
-
 
 
     placeMarkerAndPopup(cafeDuMonde, accessToken, map);
     placeMarkerAndPopup(boilingPot, accessToken, map);
     placeMarkerAndPopup(botika, accessToken, map);
-
-
-
-
 
 
 
